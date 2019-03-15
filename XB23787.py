@@ -1,5 +1,9 @@
 QuestionAndResponse = {'What is your name?' : 'XB23787', 'Do you like humans?' : ['No.']}
 def XB23787(QuestionAndResponse):
+   def most_common(lst):
+       from collections import Counter
+       data = Counter(lst)
+       return max(lst, key=data.get)
    questionkeys = ['Do you like humans?']
    import random
    from time import sleep
@@ -21,7 +25,7 @@ def XB23787(QuestionAndResponse):
            QuestionAndResponse[player] = []
            questionkeys.append(player)
        else:
-           print(str(QuestionAndResponse.get(player)))
+           print(most_common(QuestionAndResponse.get(player)))
        question = random.choice(questionkeys)
        print(question)
        player = input()
@@ -29,7 +33,7 @@ def XB23787(QuestionAndResponse):
        a = QuestionAndResponse.get(question)
        a.append(player)
        QuestionAndResponse[question] = a
-       
+       print("I'm ready!")
        
        
        
