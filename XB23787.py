@@ -3,7 +3,10 @@ def XB23787(QuestionAndResponse):
    def most_common(lst):
        from collections import Counter
        data = Counter(lst)
-       return max(lst, key=data.get)
+       if lst != []:
+           return max(lst, key=data.get)
+       if lst == []:
+           return 'I do not know.'
    questionkeys = ['Do you like humans?']
    import random
    from time import sleep
