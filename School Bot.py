@@ -9,7 +9,7 @@ QuestionAndResponse = {'What is your name?' : 'XB23787',
                        'What is wireless?' : ['Wireless is anything that communicates without wires.  Wifi and Bluetooth are examples.'],
                        'How does wireless work?' : ['Wireless normally works by sending radio waves or waves outside of the visible electromagnetic spectrum.'],
                        'What is a smart phone?' : ['A smart phone is a phone capable of things besides calling and texing.'],
-                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.'],
+                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.']
                        'What is RAM?' : ['RAM stands for Random Access Memory.  It holds recent actions, files, and other things.'],
                        'How does RAM work?' : ['RAM is actually a bunch of SD cards combined by a cicuit board.  SD cards are storage devices in your smartphone.'],
                        'What is a CPU?' : ['CPU stands for Central Processing Unit.  A CPU is the thing that processes everything on your computer.'],
@@ -24,6 +24,8 @@ QuestionAndResponse = {'What is your name?' : 'XB23787',
                        'How does the Internet work?' : ['Internet gets to you through routers. Routers take Internet info and send it along.  They also help to find sites (or domains).  Servers are other computers that are always running the code for a site.  They are what keep the Internet out there, making it real.  The Internet is just a bunch of computers communicating with each other.'],
                        'What is the Cloud?' : ['The Cloud is the Internet.']}
 def XB23787(QuestionAndResponse):
+  for a in range(0, 20):
+      print()
    def most_common(lst):
        from collections import Counter
        data = Counter(lst)
