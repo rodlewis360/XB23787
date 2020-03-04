@@ -5,11 +5,11 @@ QuestionAndResponse = {'What is your name?' : 'XB23787',
                        'What is software?' : ['Software is everything stored on the hardware.'],
                        'How does software work?' : ['Software like me works because of code that is stored on the hard drive.  Going further, little switches do calculations in binary format to give the result.'],
                        'What is hardware?' : ['Hardware is anything that you can touch.'],
-                       'How does hardware work?' : ["Hardware is a whole lot of things; you can't limit it to one."],
+                       'How does hardware work?' : ['Hardware is a whole lot of things; you cant limit it to one.'],
                        'What is wireless?' : ['Wireless is anything that communicates without wires.  Wifi and Bluetooth are examples.'],
                        'How does wireless work?' : ['Wireless normally works by sending radio waves or waves outside of the visible electromagnetic spectrum.'],
                        'What is a smart phone?' : ['A smart phone is a phone capable of things besides calling and texing.'],
-                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.']
+                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.'],
                        'What is RAM?' : ['RAM stands for Random Access Memory.  It holds recent actions, files, and other things.'],
                        'How does RAM work?' : ['RAM is actually a bunch of SD cards combined by a cicuit board.  SD cards are storage devices in your smartphone.'],
                        'What is a CPU?' : ['CPU stands for Central Processing Unit.  A CPU is the thing that processes everything on your computer.'],
@@ -26,39 +26,39 @@ QuestionAndResponse = {'What is your name?' : 'XB23787',
 def XB23787(QuestionAndResponse):
   for a in range(0, 20):
       print()
-   def most_common(lst):
-       from collections import Counter
-       data = Counter(lst)
-       if lst != []:
-           return max(lst, key=data.get)
-       if lst == []:
-           return 'I do not know.'
-   questionkeys = ['Do you like humans?']
-   import random
-   from time import sleep
-   text = ''
-   print("I am a chatbot, programmed to do your work.")
-   sleep(1)
-   print("Please use correct capitalization, punctuation, and grammar.")
-   sleep(1)
-   print("Type in q to quit.")
-   sleep(1)
-   print("Try asking me my name or things about computer parts!")
-   sleep(1)
-   print("I will automatically update myself as you go.")
-   print("Now type in your question!")
-   while text != 'q':
-       text = input()
-       if not text in QuestionAndResponse:
-           print("Adding question to database...")
-           QuestionAndResponse[text] = []
-           questionkeys.append(text)
-           question = text
-           print(question)
-           text = input()
-           print("Loging response into database...")
-           a = QuestionAndResponse.get(question)
-           a.append(text)
-           QuestionAndResponse[question] = a
-       else:
-           print(most_common(QuestionAndResponse.get(text)))
+      def most_common(lst):
+          from collections import Counter
+          data = Counter(lst)
+          if lst != []:
+              return max(lst, key=data.get)
+          if lst == []:
+              return 'I do not know.'
+  questionkeys = ['Do you like humans?']
+  import random
+  from time import sleep
+  text = ''
+  print("I am a chatbot, programmed to do your work.")
+  sleep(1)
+  print("Please use correct capitalization, punctuation, and grammar.")
+  sleep(1)
+  print("Type in q to quit.")
+  sleep(1)
+  print("Try asking me my name or things about computer parts!")
+  sleep(1)
+  print("I will automatically update myself as you go.")
+  print("Now type in your question!")
+  while text != 'q':
+      text = input()
+      if not text in QuestionAndResponse:
+          print("Adding question to database...")
+          QuestionAndResponse[text] = []
+          questionkeys.append(text)
+          question = text
+          print(question)
+          text = input()
+          print("Loging response into database...")
+          a = QuestionAndResponse.get(question)
+          a.append(text)
+          QuestionAndResponse[question] = a
+      else:
+          print(most_common(QuestionAndResponse.get(text)))
