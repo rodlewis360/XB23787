@@ -9,7 +9,7 @@ QuestionAndResponse = {'What is your name?' : 'XB23787',
                        'What is wireless?' : ['Wireless is anything that communicates without wires.  Wifi and Bluetooth are examples.'],
                        'How does wireless work?' : ['Wireless normally works by sending radio waves or waves outside of the visible electromagnetic spectrum.'],
                        'What is a smart phone?' : ['A smart phone is a phone capable of things besides calling and texing.'],
-                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.']
+                       'How does a smartphone work?' : ['A smartphone is actually a mini computer, with most of the components of one, just minimized.'],
                        'What is RAM?' : ['RAM stands for Random Access Memory.  It holds recent actions, files, and other things.'],
                        'How does RAM work?' : ['RAM is actually a bunch of SD cards combined by a cicuit board.  SD cards are storage devices in your smartphone.'],
                        'What is a CPU?' : ['CPU stands for Central Processing Unit.  A CPU is the thing that processes everything on your computer.'],
